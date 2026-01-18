@@ -40,12 +40,17 @@ Output Files:
   - threat_intel_detailed_TIMESTAMP.csv   (Complete report)
 
 Pre-Requisites to using the threat intelligence parser:
-  - Install Ollama Server
-    - curl -fsSL https://ollama.com/install.sh | sh
-  
   - Install Python version 3
     - sudo apt install python3
   
+  - Install a Virtual Environment
+    - sudo apt install python3.xx-venv
+    - python3 -m venv .venv
+    - source .venv/bin/activate
+  
+  - Install Ollama Server
+    - curl -fsSL https://ollama.com/install.sh | sh 
+ 
   - Install additional python libraries
     - pip3 install ollama pdfplumber requests numpy beautifulsoup4 pydantic
   
