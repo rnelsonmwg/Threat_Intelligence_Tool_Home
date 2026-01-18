@@ -22,16 +22,16 @@ Options:
 
 Examples:
   - Process URL list
-    - python threat_intel_parser_tool_cli.py -f urls.txt -o ./reports
+    - python3 threat_intel_parser_tool_cli.py -f urls.txt -o ./reports
   
   - Process single URL
-    - python threat_intel_parser_tool_cli.py -u https://blog.com/threat-report -o ./reports
+    - python3 threat_intel_parser_tool_cli.py -u https://blog.com/threat-report -o ./reports
   
   - Process PDF files
-    - python threat_intel_parser_tool_cli.py -p report1.pdf report2.pdf -o ./reports
+    - python3 threat_intel_parser_tool_cli.py -p report1.pdf report2.pdf -o ./reports
   
   - Custom LLM model
-    - python threat_intel_parser_tool_cli.py -f urls.txt --model llama3.1 -o ./reports
+    - python3 threat_intel_parser_tool_cli.py -f urls.txt --model llama3.1 -o ./reports
 
 Output Files:
   - threat_intel_summary_TIMESTAMP.csv    (High-level overview)
@@ -44,9 +44,10 @@ Pre-Requisites to using the threat intelligence parser:
     - curl -fsSL https://ollama.com/install.sh | sh
   
   - Install Python version 3
+    - sudo apt install python3
   
   - Install additional python libraries
-    - pip install ollama pdfplumber requests numpy beautifulsoup4 pydantic
+    - pip3 install ollama pdfplumber requests numpy beautifulsoup4 pydantic
   
   - What these libraries do:
       - ollama: Connects the script to your local AI models.
