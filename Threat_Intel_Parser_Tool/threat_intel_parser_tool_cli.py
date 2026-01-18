@@ -110,8 +110,6 @@ import csv
 import sys
 import json
 import threading
-import tkinter as tk
-from tkinter import ttk, filedialog, messagebox, scrolledtext
 from datetime import datetime
 from typing import List, Dict, Any, Optional, Tuple
 from urllib.request import urlopen, Request
